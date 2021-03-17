@@ -1,3 +1,4 @@
+window.onload = function(){
 jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
@@ -32,5 +33,5 @@ function changeImg(){
   if (curIndex == images.length) { curIndex = 0; }
   setTimeout(changeImg, imgDuration);
 }
-
+};
 window.onload = changeImg;

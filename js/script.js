@@ -36,5 +36,4 @@ function changeImg() {
   if (curIndex == images.length) { curIndex = 0; }
   setTimeout(changeImg, imgDuration);
 }
-window.onload = changeImg;
 };

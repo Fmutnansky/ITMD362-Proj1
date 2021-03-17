@@ -19,10 +19,10 @@ function submit(event) {
 window.onload = function(){
 //Automatic Slideshow
 var images = [
-  "media/Gaming.jpg",
-  "media/hw.jpg",
-  "media/LMG.jpg",
-  "media/WaterBottle.jpg"],
+  "/media/Gaming.jpg",
+  "/media/LMG.jpg",
+  "/media/WaterBottle.jpg",
+  "/media/hw.jpg"],
   curIndex = 0;
   imgDuration = 4000; // Images Array
 

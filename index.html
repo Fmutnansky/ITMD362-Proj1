@@ -3,7 +3,72 @@
   <head>
     <meta charset="UTF-8">
     <title>ITMD-362 FMutnansky Project 1</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=none" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
+  
+  <body>
+    <header id="header">
+      <h1>Linus Media Group</h1>
+      <p>
+        Sign up for out newsletter to stay in the loop about LMG
+      </p>
+    </header>
+
+    <main id="content">
+      <form id="myForm">
+        <fieldset>
+          <ul class="formlist">
+            <li id="input-email">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" pattern="^.+@.+$"
+              placeholder="Example@gmail.com" required/>
+            </li>
+            <li id="newslist">
+              <p>What news would you like to recieve?</p>
+              <ul id="input-newstype">
+                <li class="newstype">
+                  <label for="newstype1">PC Harware</label>
+                  <input type="checkbox" id="newstype1" name="newstype1" value="PCHarware">
+                </li>
+                <li class="newstype">
+                  <label for="newstype2">Video Games</label>
+                  <input type="checkbox" id="newstype2" name="newstype2" value="VideoGames">
+                </li>
+                <li class="newstype">
+                  <label for="newstype3">LTT Store.com</label>
+                  <input type="checkbox" id="newstype3" name="newstype3" value="LTTStore">
+                </li>
+                <li class="newstype">
+                  <label for="newstype4">LMG Updates</label>
+                  <input type="checkbox" id="newstype4" name="newstype4" value="LMGUpdates">
+                </li>
+              </ul>
+            </li>
+
+            <li id="input-phone">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890" required>
+            </li>
+			<li class="newstype">
+                  <label for="newstype5">Sign Up For Text Alerts?</label>
+                  <input type="checkbox" id="newstype5" name="newstype5" value="TextAlerts">
+            </li>
+
+            <li id="input-submit">
+              <input type="submit" name="phone" id="submit" value="Sign up!"
+              onsubmit="return clickEvent();" />
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+	  <p id="success" hidden> Thank you for signing up for our news letter!</p>
+    </main>
+  </body>
+</html>

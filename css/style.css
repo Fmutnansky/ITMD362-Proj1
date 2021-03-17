@@ -86,6 +86,15 @@ li {
   flex-basis: 1em;
 }
 
+#slider {
+  opacity:1;
+  transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+  opacity:0;
+}
+
 /* ---Layout--- */
 
 body {
@@ -118,15 +127,6 @@ main {
     padding-right: 0em;
   }
 
-}
-
-#slider {
-  opacity:1;
-  transition: opacity 1s; 
-}
-
-#slider.fadeOut {
-  opacity:0;
 }
 
 /*

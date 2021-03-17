@@ -15,7 +15,8 @@ function submit(event) {
 
   event.preventDefault();
 }
-
+};
+window.onload = function(){
 //Automatic Slideshow
 var images = [
   "media/Gaming.jpg",

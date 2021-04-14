@@ -19,8 +19,7 @@ html {
   line-height: 1.3em; 
   background: #ffffff;
   color: #ff4000;
-  /*-webkit-text-stroke-width: 0.02em;
-  -webkit-text-stroke-color: white;*/
+  text-shadow: -0.05em 0 white, 0 0.05em white, 0.05em 0 white, 0 -0.05em white;
 }
 
 @supports (display: grid) {

@@ -61,6 +61,11 @@
                 <label for="newstype5">Sign Up For Text Alerts?</label>
                 <input type="checkbox" id="newstype5" name="newstype5" value="TextAlerts">
             </li>
+            <li id="input-submit">
+              <input type="submit" name="phone" id="submit" value="Sign up!"
+              onsubmit="return clickEvent();" />
+            </li>
+          </ul>	
 	    <p>See more about us!</p>
 	    <td class="picture">
 	      <div class="container">
@@ -71,12 +76,7 @@
 	          </div>
 	        </a>
 	      </div>
-	    </td>
-            <li id="input-submit">
-              <input type="submit" name="phone" id="submit" value="Sign up!"
-              onsubmit="return clickEvent();" />
-            </li>
-          </ul>		  
+	    </td>            	  
         </fieldset>
       </form>
       <p id="success" hidden> Thank you for signing up for our news letter!</p>

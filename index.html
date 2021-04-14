@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>ITMD-362 FMutnansky Project 1</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=none" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=none" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="js/script.js"></script>
+	<script async src="js/slidescript.js"></script>
   </head>
   
   <body>
@@ -56,23 +57,29 @@
               <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="123-456-7890" required>
             </li>
-			<li class="newstype">
-                  <label for="newstype5">Sign Up For Text Alerts?</label>
-                  <input type="checkbox" id="newstype5" name="newstype5" value="TextAlerts">
+		<li class="newstype">
+                <label for="newstype5">Sign Up For Text Alerts?</label>
+                <input type="checkbox" id="newstype5" name="newstype5" value="TextAlerts">
             </li>
-
+	    <p>See more about us!</p>
+	    <td class="picture">
+	      <div class="container">
+	        <a href="https://linustechtips.com/">
+	        <img id="slider" src="media" width="400" height="300" alt="slideshow" class="image" />
+	          <div class="overlay">
+	            <div class="text"> Check us out </div>
+	          </div>
+	        </a>
+	      </div>
+	    </td>
             <li id="input-submit">
               <input type="submit" name="phone" id="submit" value="Sign up!"
               onsubmit="return clickEvent();" />
             </li>
-          </ul>
-		  <p>See more about us!</p>
-          <p class="aligncenter">
-          <img id="slider" src="media" width="750" height="500" alt="slideshow" />
-          </p>
+          </ul>		  
         </fieldset>
       </form>
-	  <p id="success" hidden> Thank you for signing up for our news letter!</p>
+      <p id="success" hidden> Thank you for signing up for our news letter!</p>
     </main>
   </body>
 </html>

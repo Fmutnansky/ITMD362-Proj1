@@ -15,10 +15,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family: Josefin Sans, sans-serif;
-  font-size: 1.25em; 
+  font-size: 1.5em; 
   line-height: 1.3em; 
   background: #ffffff;
   color: #ff4000;
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-stroke-color: white;
 }
 
 @supports (display: grid) {
@@ -42,7 +44,7 @@ label {
 }
 
 fieldset{
-  background: #666666;
+  background: #808080;
   border: 0.15em solid#ff4000;
   border-radius: 0.75em;
 }
@@ -86,15 +88,6 @@ li {
   flex-basis: 1em;
 }
 
-#slider {
-  opacity:1;
-  transition: opacity 1s; 
-}
-
-#slider.fadeOut {
-  opacity:0;
-}
-
 /* ---Layout--- */
 
 body {
@@ -132,3 +125,60 @@ main {
 /*
 font-family: 'Josefin Sans', sans-serif;
 */
+
+#slider {
+  opacity:1;
+  transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+  opacity:0;
+}
+
+.picture {
+  display: block;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+}
+
+.container {
+  position: relative;
+  width: 400px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff4000;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
